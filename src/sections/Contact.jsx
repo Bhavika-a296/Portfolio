@@ -23,6 +23,15 @@ const Contact = () => {
     setLoading(true); // Show loading state
 
     try {
+      // Check if environment variables are available
+      if (!import.meta.env.VITE_APP_EMAILJS_SERVICE_ID || 
+          !import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID || 
+          !import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY) {
+        console.warn("EmailJS credentials not configured");
+        alert("Contact form is not configured. Please email directly at patilbhavika143@gmail.com");
+        return;
+      }
+
       await emailjs.sendForm(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
@@ -32,8 +41,10 @@ const Contact = () => {
 
       // Reset form and stop loading
       setForm({ name: "", email: "", message: "" });
+      alert("Message sent successfully!");
     } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+      console.error("EmailJS Error:", error);
+      alert("Failed to send message. Please try again.");
     } finally {
       setLoading(false); // Always stop loading, even on error
     }
