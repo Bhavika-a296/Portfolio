@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { getAssetPath } from "../utils/assetPath";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,7 +50,7 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/Brandghar.png" alt="Ryde App Interface" />
+              <img src={getAssetPath("/images/Brandghar.png")} alt="Ryde App Interface" />
             </div>
             <div className="text-content">
               <h2>
@@ -65,7 +66,7 @@ A multi-vendor eCommerce app offering a smooth online shopping experience for a 
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
-                  src="/images/Roamify.png"
+                  src={getAssetPath("/images/Roamify.png")}
                   alt="Roamify- Your Personalize Travel Assistant"
                 />
               </div>
@@ -74,7 +75,7 @@ A multi-vendor eCommerce app offering a smooth online shopping experience for a 
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/SkillXchange.png" alt="SkillXchange" />
+                <img src={getAssetPath("/images/SkillXchange.png")} alt="SkillXchange" />
               </div>
               <h2>SkillXchange - A peer to peer skill sharing platform </h2>
             </div>

@@ -1,3 +1,5 @@
+import { getAssetPath } from "../utils/assetPath";
+
 const navLinks = [
   {
     name: "Work",
@@ -18,14 +20,14 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "./images/ideas.svg" },
-  { text: "Concepts", imgPath: "./images/concepts.svg" },
-  { text: "Designs", imgPath: "./images/designs.svg" },
-  { text: "Code", imgPath: "./images/code.svg" },
-  { text: "Ideas", imgPath: "./images/ideas.svg" },
-  { text: "Concepts", imgPath: "./images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Ideas", imgPath: getAssetPath("/images/ideas.svg") },
+  { text: "Concepts", imgPath: getAssetPath("/images/concepts.svg") },
+  { text: "Designs", imgPath: getAssetPath("/images/designs.svg") },
+  { text: "Code", imgPath: getAssetPath("/images/code.svg") },
+  { text: "Ideas", imgPath: getAssetPath("/images/ideas.svg") },
+  { text: "Concepts", imgPath: getAssetPath("/images/concepts.svg") },
+  { text: "Designs", imgPath: getAssetPath("/images/designs.svg") },
+  { text: "Code", imgPath: getAssetPath("/images/code.svg") },
 ];
 
 const counterItems = [
@@ -37,53 +39,53 @@ const counterItems = [
 
 const logoIconsList = [
   {
-     imgPath: "/images/logos/company-logo-1.png",
+     imgPath: getAssetPath("/images/logos/company-logo-1.png"),
    },
    {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: getAssetPath("/images/logos/company-logo-2.png"),
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: getAssetPath("/images/logos/company-logo-3.png"),
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: getAssetPath("/images/logos/company-logo-4.png"),
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: getAssetPath("/images/logos/company-logo-5.png"),
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: getAssetPath("/images/logos/company-logo-6.png"),
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: getAssetPath("/images/logos/company-logo-7.png"),
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: getAssetPath("/images/logos/company-logo-8.png"),
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    imgPath: getAssetPath("/images/logos/company-logo-9.png"),
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    imgPath: getAssetPath("/images/logos/company-logo-10.png"),
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    imgPath: getAssetPath("/images/logos/company-logo-11.png"),
   },
 ];
 
 const abilities = [
   {
-    imgPath: "/images/Brandghar.png",
+    imgPath: getAssetPath("/images/Brandghar.png"),
     title: "Quality Focus",
     desc: "Delivering high-quality results while maintaining attention to every detail.",
   },
   {
-    imgPath: "/images/chat.png",
+    imgPath: getAssetPath("/images/chat.png"),
     title: "Reliable Communication",
     desc: "Keeping you updated at every step to ensure transparency and clarity.",
   },
   {
-    imgPath: "/images/time.png",
+    imgPath: getAssetPath("/images/time.png"),
     title: "On-Time Delivery",
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
@@ -92,55 +94,55 @@ const abilities = [
 const techStackImgs = [
   {
     name: "React Developer",
-    imgPath: "/images/logos/react.png",
+    imgPath: getAssetPath("/images/logos/react.png"),
   },
   {
     name: "Android Developer",
-    imgPath: "/images/logos/android.svg",
+    imgPath: getAssetPath("/images/logos/android.svg"),
   },
   {
     name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    imgPath: getAssetPath("/images/logos/node.png"),
   },
   {
     name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
+    imgPath: getAssetPath("/images/logos/three.png"),
   },
   {
     name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
+    imgPath: getAssetPath("/images/logos/git.svg"),
   },
 ];
 
 const techStackIcons = [
   {
     name: "React Developer",
-    modelPath: "/models/react_logo-transformed.glb",
+    modelPath: getAssetPath("/models/react_logo-transformed.glb"),
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
     name: "Android Developer",
-    modelPath: "/models/android_logo.glb",
+    modelPath: getAssetPath("/models/android_logo.glb"),
     scale: 1.5,
     rotation: [0, 0, 0],
     position: [0, 3, 5],
   },
   {
     name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
+    modelPath: getAssetPath("/models/node-transformed.glb"),
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
     name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
+    modelPath: getAssetPath("/models/three.js-transformed.glb"),
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
     name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
+    modelPath: getAssetPath("/models/git-svg-transformed.glb"),
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
@@ -149,8 +151,8 @@ const techStackIcons = [
 const expCards = [
   {
     review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
+    imgPath: getAssetPath("/images/exp1.png"),
+    logoPath: getAssetPath("/images/logo1.png"),
     title: "Android Developer",
     date: "July 2025 - Present",
     responsibilities: [
@@ -188,15 +190,15 @@ const expCards = [
 const expLogos = [
   {
     name: "logo1",
-    imgPath: "/images/logo1.png",
+    imgPath: getAssetPath("/images/logo1.png"),
   },
   {
     name: "logo2",
-    imgPath: "/images/logo2.png",
+    imgPath: getAssetPath("/images/logo2.png"),
   },
   {
     name: "logo3",
-    imgPath: "/images/logo3.png",
+    imgPath: getAssetPath("/images/logo3.png"),
   },
 ];
 
@@ -206,7 +208,7 @@ const expLogos = [
     mentions: "@estherhoward",
     review:
       "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+    imgPath: getAssetPath("/images/client1.png"),
   },
 //   {
 //     name: "Wade Warren",
@@ -260,7 +262,7 @@ const socialImgs = [
   // },
   {
     name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    imgPath: getAssetPath("/images/linkedin.png"),
     link:" https://www.linkedin.com/in/bhavika-patil-42280b257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
