@@ -175,4 +175,6 @@ export function Room(props) {
   );
 }
 
-useGLTF.preload("/models/optimized-room.glb");
+// Preload model and texture for better performance
+useGLTF.preload(getAssetPath("/models/optimized-room.glb"));
+useTexture.preload(getAssetPath("/images/textures/mat1.png"));

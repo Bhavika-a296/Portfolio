@@ -26,6 +26,6 @@ export function Computer(props) {
   );
 }
 
-useGLTF.preload("/models/computer-optimized-transformed.glb");
+useGLTF.preload(getAssetPath("/models/computer-optimized-transformed.glb"));
 
 export default Computer;
