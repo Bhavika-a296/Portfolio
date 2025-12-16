@@ -1,3 +1,5 @@
+import { getAssetPath } from "../utils/assetPath";
+
 /**
  * A reusable CTA button component.
  * When clicked, it scrolls smoothly to the section with ID "counter",
@@ -31,7 +33,7 @@ const Button = ({ text, className, id }) => {
         <div className="bg-circle" />
         <p className="text">{text}</p>
         <div className="arrow-wrapper">
-          <img src="/images/arrow-down.svg" alt="arrow" />
+          <img src={getAssetPath("/images/arrow-down.svg")} alt="arrow" />
         </div>
       </div>
     </a>
