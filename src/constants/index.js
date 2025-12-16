@@ -33,7 +33,7 @@ const words = [
 const counterItems = [
   // { value: 15, suffix: "+", label: "Years of Experience" },
   // { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 4, suffix: "+", label: "Completed Projects" },
+  { value: 3, suffix: "+", label: "Completed Projects" },
   // { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
@@ -150,9 +150,9 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review: "Bhavika Patil played a key role in developing both the Android application and website, demonstrating strong technical expertise and a clear understanding of business requirements. She delivered seamless, responsive solutions with high ownership, timely execution, and effective communication. Her problem-solving skills and dedication made the development process smooth and efficient.",
     imgPath: getAssetPath("/images/exp1.png"),
-    logoPath: getAssetPath("/images/logo1.png"),
+    logoPath: getAssetPath("/images/exp1.png"),
     title: "Android Developer",
     date: "July 2025 - Present",
     responsibilities: [
@@ -204,11 +204,11 @@ const expLogos = [
 
  const testimonials = [
    {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Saurav Chaudhary",
+    mentions: "@sauravchaudhary",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: getAssetPath("/images/client1.png"),
+      "Bhavika demonstrated strong technical skills, clear understanding of requirements, and a high level of ownership while working on both mobile and web applications. Her timely delivery, proactive communication, and problem-solving approach ensured high-quality outcomes.",
+    //imgPath: getAssetPath("/images/client1.png"),
   },
 //   {
 //     name: "Wade Warren",
